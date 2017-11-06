@@ -1,11 +1,13 @@
 <html>
   <body>
+    <% if @name %>
+    <h1>My name is <%= @name %></h1>
+    <% end %>
     <form action="/named-cat" method="get">
       <label for="name">Name:</label>
       <input type="text" name="name">
       <input type="submit" value="Submit">
     </form>
-    <h1>My name is <%= @name %></h1>
     <img src='http://bit.ly/1eze8aE' style="border: medium dashed red;" />
   </body>
 </html>
